@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tech</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+
+        }
+@media (max-width: 520px){
+
+#header{
+   background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+   display: flex;
+   justify-content: space-around;
+   height: 5em;
+   align-items: center;
+   box-shadow: 0px 0px 5px 3px rgb(76, 76, 134);
+   position: sticky;
+   top: 0;
+   color: #ffffff;
+}
+.dropbtn{
+  margin-left: 15em;
+
+}
+.dropbtn img{
+    width: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 20em;
+  height: 50em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 1em;
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1; border-radius: 20px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+main{
+    text-align: center;
+}
+#btn3 a{
+    /* border: 1px solid purple; */
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    /* border-radius: 10px; */
+    padding: 4px;
+    color: #ffffff;
+}
+#btn4 a{
+    border: 1px solid skyblue;
+    /* border-radius: 10px; */
+    padding: 4px;
+    color: #000000;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 2em;
+}
+#btn a{
+    text-decoration: none;
+    
+}
+#card1 img{
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    border-radius: 100%;
+    margin-top: 15px;
+}
+#card1{
+    border: 3px dotted skyblue;
+     border-radius: 100%;
+     width: 17em; 
+     height: 17em;
+     margin-top: 20px;
+     margin-left: 6em;
+}
+#main{
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    margin-top: 20px;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+}
+#main ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+#course{
+    margin-top: 40px;
+}
+#course h1{
+    text-align: center;
+}
+#course input {
+    width: 17em;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border: 1px solid skyblue;
+    margin-left: 6em;
+    margin-top: 7px;
+}
+#course button{
+    width: 7em;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border: 1px solid skyblue;
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    color: #ffffff;
+    /* margin-left: 3em; */
+}
+#radius{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: 60px;
+   margin-top: 20px;
+   border: 3px dotted skyblue;
+   border-radius: 70px;
+   width: 22em;
+}
+#man1{
+    background-color: skyblue;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+#man2{
+    background-color: rgb(76, 76, 134);
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+#man3{
+    background-color:rgb(76, 76, 134);
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+#man4{
+    background-color:  skyblue;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+#benefits span{
+    font-weight: bold;
+    font-size: 20px;
+}
+#ben1, #ben2, #ben3, #ben4{
+    margin-left: 25px;
+    display: flex;
+    gap: 20px;
+}
+#popular{
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    height:86em;
+    margin-top: 20px;
+}
+#pop p{
+    text-align: center;
+}
+#pop{
+    color: #ffffff;
+}
+#computer1, #computer2, #computer3{
+    width: 23em;
+    height: 25em;
+    margin-left: 45px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#computer1 img, #computer2 img, #computer3 img{
+    width: 23em;
+    height: 15em;
+    border-radius: 20px;
+}
+#computer1 p, #computer2 p, #computer3 p{
+    font-weight: bold;
+    font-size: 20px;
+}
+#computer1 a, #computer2 a, #computer3 a{
+    text-decoration: none;
+    
+}
+#com_a a{
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    padding: 5px;
+    color: #ffffff;
+}
+#com_a{
+    margin-top: 15px;
+}
+#rate img{
+    width: 20px;
+    height: 20px;
+}
+#rate{
+    margin-top: 20px;
+}
+#tech0{
+    display: flex;
+    margin-left: 20px;
+}
+#tech1{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#tech3{
+    margin-top: 30px;
+}
+#tech2 a{
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+#tech_a{
+    margin-top: 15px;
+}
+#tech_card img{
+    width: 15em;
+    margin-left: 2em;
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin-top: 30px;
+    margin-left: 7em;
+    height: 17em;
+    border: 2px dotted skyblue;
+}
+#student{
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    height: 37em;
+}
+#student_txt{
+    color: #ffffff;
+    text-align: center;
+}
+#student1{
+    margin-top: 20px;
+    background-color: #ffffff;
+    width: 25em;
+    margin-left: 3em;
+    border-radius: 20px;
+}
+#student2 img{
+    width: 7em;
+    border-radius: 100%;
+    border: 2px dotted skyblue;
+    width: 5em;
+    margin-top: 10px;
+}
+#student2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 2em;
+}
+#students_txt{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background: linear-gradient(to right, skyblue, rgb(76, 76, 134));
+    color: #ffffff;
+    position: sticky;
+    bottom: 0;
+}
+
+}      
+    </style>
+<body>
+    <div id="header">
+       <div id="logo"><h2>E-Tech</h2></div>
+        <div class="dropdown">
+            <div class="dropbtn"><img src="menu.png" alt=""></div>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">SignUp</a>
+              <a href="#">Login</a>
+            </div>
+          </div>
+    </div>
+
+    <main>
+    
+        <h1>You can simply</h1>
+        <h1>Develop your</h1>
+        <h1>skills in a new</h1>
+        <h1>and unique way.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Nisi nostrum veritatis cupiditate id pariatur illo, quis,</p>
+        <p>iure natus incidunt, quibusdam delectus similique mollitia</p>
+        <p> neque et impedit suscipit aut recusandae cum?</p>
+        <div id="btn">
+        <div id="btn3" title="you can read more about anything you want in this site"><a href="">Read More</a></div>
+        <div id="btn4"><a href="">More Experience</a></div>
+        </div>
+    
+        <div id="card1"><img src="man (2).png" width="250em"></div>
+    </main>
+
+    <div id="main">
+        <ul>
+            <img src="icon (3).png" width="30px">
+            <li>Microsoft</li>
+            <img src="icon (4).png" width="30">
+            <li>Cloud</li>
+            <img src="icon (1).png" width="30px">
+            <li>Server</li>
+            <img src="icon (2).png" width="30px">
+            <li>AI</li>
+        </ul>
+    </div>
+
+    <div id="course">
+
+        <h1>Search Courses</h1>
+        <input type="search" placeholder="Search your courses here">
+        <button>Search</button>
+
+        <div id="radius">
+            <img src="man (2).png" width="170px" id="man1">
+            <img src="man (3).png" width="170px" id="man2">
+            <img src="man (4).png" width="170px" id="man3">
+            <img src="man (1).png" width="170px" id="man4">
+        </div>
+
+        <div id="benefits">
+           <h1>Benefis for online </h1>
+            <h1>Learning</h1>
+
+            <div id="ben1">
+
+                <div>
+                <img src="icons (3).png" width="50px">
+                </div>
+
+                <div>
+                <span>Flexibility</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <p>Consectetur quibusdam, provident consequuntur, nostrum </p>
+                </div>
+
+            </div><br><br>
+
+            <div id="ben2">
+                <div>
+                <img src="icons (4).png" width="50px">
+                </div>
+
+                <div>
+                <span>Accessibility</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <p>Consectetur quibusdam, provident consequuntur, nostrum </p>
+                </div>
+
+            </div><br><br>
+
+            <div id="ben3">  
+                <div>
+                <img src="icons (2).png" width="50px">
+                </div>
+
+                <div>
+                <span>Personalization</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <p>Consectetur quibusdam, provident consequuntur, nostrum </p>
+                </div>
+            </div><br><br>  
+
+            <div id="ben4">
+                <div>
+                <img src="icons (1).png" width="50px">
+                </div>
+
+                <div>
+                <span>Cost-Effectiveness</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <p>Consectetur quibusdam, provident consequuntur, nostrum </p>
+                </div>
+            </div>
+    </div>
+
+    <div id="popular">
+
+        <div id="pop">
+        <h1>Our Popular Courses</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+        <p>Consectetur quibusdam, provident consequuntur, nostrum </p>
+        <p>sectetur quibusdam, provident consequuntur.</p>
+        </div>
+
+        <div id="computer1">
+            <img src="computer (1).jpg">
+            <p>Consectetur quibusdam, provident</p>
+            <p>sectetur quibusdam.</p>
+            <div id="com_a"><a href="">Read More</a></div>
+            <div id="rate">
+            <img src="rate.png">
+            <img src="rate.png">
+            <img src="rate.png">
+            <img src="rate.png">
+            <img src="rate.png">
+            <img src="rate.png">
+            </div>
+        </div>
+
+        <div id="computer2">
+            <img src="computer (2).jpg">
+            <p>Consectetur quibusdam, provident</p>
+            <p>sectetur quibusdam.</p>
+            <div id="com_a"><a href="">Read More</a></div>
+            <div id="rate">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                </div>
+        </div>
+
+        <div id="computer3">
+            <img src="computer (3).jpg">
+            <p>Consectetur quibusdam, provident</p>
+            <p>sectetur quibusdam.</p>
+            <div id="com_a"><a href="">Read More</a></div>
+            <div id="rate">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                <img src="rate.png">
+                </div>
+        </div>
+    </div>
+
+    <div id="teach">
+        <div id="tech1">
+        <h2>If you are a certified teacher</h2>
+        <h2>then become an instructor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Nisi nostrum veritatis cupiditate id pariatur illo, quis,</p>
+        <p>iure natus incidunt, quibusdam delectus similique mollitia</p>
+        <p> neque et impedit suscipit aut recusandae cum?</p>
+        </div>
+
+        <div id="tech0">
+        <div id="tech2">
+            <h2>Enjoy Lawful Perks</h2>
+            <ul>
+                <li>Lawful</li>
+                <li>Lawfulness</li>
+                <li>Legit</li>
+                <li>Legitim</li>
+            </ul>
+           <div   id="tech_a"><a href="">Explore more about our e-tech</a></div> 
+        </div>
+
+        <div id="tech3">
+            <ul>
+                <li>Lawful</li>
+                <li>Lawfulness</li>
+                <li>Legit</li>
+                <li>Legitim</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="tech_card">
+        <div><img src="PERSON1.png" alt=""></div>
+    </div>
+    </div>
+
+    <div id="student">
+        <div id="student_txt">
+        <h2>Student Testimonials</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Nisi nostrum veritatis cupiditate id pariatur illo, quis,</p>
+        <p> neque et impedit suscipit aut recusandae cum?</p>
+        </div>
+
+        <div id="student1">
+
+            <div id="student2">
+            <div><img src="PERSON22 (2).png" alt=""></div>
+            <div>
+            <h4>Mr.Abdul muneer</h4>
+            <p>Programmer</p>
+            </div>
+            </div>
+            <div id="students_txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Nisi nostrum veritatis cupiditate id pariatur illo, quis,</p>
+            <p> neque et impedit suscipit aut recusandae cum?</p>
+            </div>
+    </div>
+        <div id="student1">
+
+            <div id="student2">
+            <div><img src="PERSON (5).png" alt=""></div>
+            <div>
+            <h4>Mrs.Ameenatu</h4>
+            <p>Programmer</p>
+            </div>
+            </div>
+            <div id="students_txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Nisi nostrum veritatis cupiditate id pariatur illo, quis,</p>
+            <p> neque et impedit suscipit aut recusandae cum?</p>
+            </div>
+    </div>
+        <div id="student1">
+
+            <div id="student2">
+            <div><img src="PERSON (6).png" alt=""></div>
+            <div>
+            <h4>Mrs.Salamatu</h4>
+            <p>Programmer</p>
+            </div>
+            </div>
+            <div id="students_txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Nisi nostrum veritatis cupiditate id pariatur illo, quis,</p>
+            <p> neque et impedit suscipit aut recusandae cum?</p>
+            </div>
+    </div>
+</div>
+    <footer>&copy;copyright 2024 by Abdulmuneer Ali Sunusi</footer>
+</body>
+</html>
